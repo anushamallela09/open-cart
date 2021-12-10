@@ -95,4 +95,6 @@ public class AccountRegistrationPage {
             return  (e.getMessage());
         }
     }
+
+
 }

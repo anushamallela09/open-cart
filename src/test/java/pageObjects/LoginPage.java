@@ -29,7 +29,8 @@ public class LoginPage {
 
 
 
-        public void setEmail(String email)
+        public void setEmail(String email )
+
         {
             txtEmailAddress.sendKeys(email);
         }
@@ -53,6 +54,14 @@ public class LoginPage {
             {
                 return(false);
             }
+        }
+
+        public void loginApp(String email,String pwd){
+            txtEmailAddress.sendKeys(email);
+            txtPassword.sendKeys(pwd);
+            btnLogin.click();
+
+
         }
 
     }

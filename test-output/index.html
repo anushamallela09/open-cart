@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,6 +105,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="testCases.TC_003_LoginDDT" hash-for-method="test_LoginDDT(pavan@gmail.com, test123, Invalid)">test_LoginDDT(pavan@gmail.com, test123, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="testCases.TC_003_LoginDDT" hash-for-method="test_LoginDDT(pavan@gmail.com, test, Invalid)">test_LoginDDT(pavan@gmail.com, test, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-All_Test_Suite -->
@@ -124,11 +129,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="testCases.TC_003_LoginDDT" hash-for-method="test_LoginDDT(pavanoltraining@gmail.com, test, Invalid)">test_LoginDDT(pavanoltraining@gmail.com, test, Invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="testCases.TC_003_LoginDDT" hash-for-method="test_LoginDDT(pavan@gmail.com, test, Invalid)">test_LoginDDT(pavan@gmail.com, test, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -166,6 +166,23 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_LoginDDT(pavan@gmail.com, test, Invalid)">
+                  </a> <!-- test_LoginDDT(pavan@gmail.com, test, Invalid) -->
+                  <span class="method-name">test_LoginDDT</span>
+                  <span class="parameters">(pavan@gmail.com, test, Invalid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.TC_003_LoginDDT.test_LoginDDT(TC_003_LoginDDT.java:76)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-failed -->
           <div class="suite-All_Test_Suite-class-passed">
@@ -188,14 +205,6 @@
                   </a> <!-- test_LoginDDT(pavanoltraining@gmail.com, test, Invalid) -->
                   <span class="method-name">test_LoginDDT</span>
                   <span class="parameters">(pavanoltraining@gmail.com, test, Invalid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_LoginDDT(pavan@gmail.com, test, Invalid)">
-                  </a> <!-- test_LoginDDT(pavan@gmail.com, test, Invalid) -->
-                  <span class="method-name">test_LoginDDT</span>
-                  <span class="parameters">(pavan@gmail.com, test, Invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -260,24 +269,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_LoginDDT')
 data.setCell(0, 2, 'testCases.TC_003_LoginDDT')
-data.setCell(0, 3, 32268);
+data.setCell(0, 3, 6420);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test_LoginDDT')
 data.setCell(1, 2, 'testCases.TC_003_LoginDDT')
-data.setCell(1, 3, 32104);
+data.setCell(1, 3, 5997);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_LoginDDT')
 data.setCell(2, 2, 'testCases.TC_003_LoginDDT')
-data.setCell(2, 3, 4404);
+data.setCell(2, 3, 50);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test_LoginDDT')
 data.setCell(3, 2, 'testCases.TC_003_LoginDDT')
-data.setCell(3, 3, 960);
+data.setCell(3, 3, 14);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -310,25 +319,29 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test_LoginDDT(pavanoltraining@gmail.com, test123, Valid)</span>
-                <span class="method-start">9848 ms</span>
+                <span class="method-start">8096 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_LoginDDT(pavanoltraining@gmail.com, test, Invalid)</span>
-                <span class="method-start">14277 ms</span>
+                <span class="method-start">14128 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test_LoginDDT(pavan@gmail.com, test123, Invalid)</span>
-                <span class="method-start">46382 ms</span>
+                <span class="method-start">20554 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test_LoginDDT(pavan@gmail.com, test, Invalid)</span>
-                <span class="method-start">47377 ms</span>
+                <span class="method-start">20650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">79646 ms</span>
+                <span class="method-start">20667 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
